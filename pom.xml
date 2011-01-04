@@ -21,17 +21,17 @@
         <module>x1</module>
     </modules>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip> <!-- No need to deploy the reactor -->
-                </configuration>
-            </plugin>
-        </plugins>
+	<build>
+		<pluginManagement>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-site-plugin</artifactId>
+					<configuration>
+						<stagingSiteURL>file://${workspace}/${project.groupId}/${project.artifactId}/${project.version}</stagingSiteURL>
+					</configuration>
+				</plugin>
+            </plugins>
+        </pluginManagement>
     </build>
-
 
 </project>
