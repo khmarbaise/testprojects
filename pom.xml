@@ -9,13 +9,13 @@
         <groupId>com.soebes.testprojects.module</groupId>
         <artifactId>parent</artifactId>
         <version>0.1.0-SNAPSHOT</version>
-        <relativePath>parent/pom.xml</relativePath>
+        <relativePath>./parent/pom.xml</relativePath>
     </parent>
 
     <artifactId>testprojects</artifactId>
     <packaging>pom</packaging>
 
-    <name>Test Project</name>
+    <name>Test Project :: Reactor</name>
 
     <modules>
         <module>x1</module>
