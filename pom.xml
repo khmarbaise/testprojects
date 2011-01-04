@@ -22,17 +22,15 @@
     </modules>
 
 	<build>
-		<pluginManagement>
-            <plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-site-plugin</artifactId>
-					<configuration>
-						<stagingSiteURL>file://${workspace}/${project.groupId}/${project.artifactId}/${project.version}</stagingSiteURL>
-					</configuration>
-				</plugin>
-            </plugins>
-        </pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<configuration>
+					<stagingSiteURL>file://${workspace}/${project.groupId}/${project.artifactId}/${project.version}</stagingSiteURL>
+				</configuration>
+			</plugin>
+		</plugins>
     </build>
 
 </project>
