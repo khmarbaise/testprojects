@@ -18,7 +18,7 @@
     <name>Test Project</name>
 
     <modules>
-        <module>parent</module>
+        <module>x1</module>
     </modules>
 
     <build>
